@@ -30,6 +30,13 @@ return [
 
     'disks' => [
 
+        'schemas' => [
+            'driver' => 'local',
+            'root' => storage_path('app/schemas/json'),
+            'url' => env('APP_URL').'/schemas/json',
+            'visibility' => 'public',
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
